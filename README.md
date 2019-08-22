@@ -15,7 +15,7 @@ The code is an extension of source code written by Jun-Yan Zhu and Taesung Park,
 - Clone this repo:
 ```bash
 git clone https://github.com/msc-acse/acse-9-independent-research-project-L519159123
-cd pytorch-CycleGAN-and-pix2pix
+cd acse-9-independent-research-project-L519159123
 ```
 
 - Install [PyTorch](http://pytorch.org and) 0.4+ and other dependencies (e.g., torchvision, [visdom](https://github.com/facebookresearch/visdom) and [dominate](https://github.com/Knio/dominate)).
