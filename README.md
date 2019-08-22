@@ -118,6 +118,6 @@ If you plan to implement custom models and dataset for your new applications, we
 To help users better understand and use our code, we briefly overview the functionality and implementation of each package and each module.
 
 ## Acknowledgments
-Our code is inspired by [pix2pix] and [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
+Our code is inspired by [Pix2pix] and [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 Thanks to the support from my supervisor Prof. Mike Warner and Dr. Jiashun Yao.
 Thanks to the moral support from my family and friends.
