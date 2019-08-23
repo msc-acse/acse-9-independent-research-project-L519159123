@@ -86,6 +86,7 @@ def print_numpy(x, val=True, shp=False):
         x = x.flatten()
         print('mean = %3.3f, min = %3.3f, max = %3.3f, median = %3.3f, std=%3.3f' % (
             np.mean(x), np.min(x), np.max(x), np.median(x), np.std(x)))
+        return np.min(x), np.max(x), np.mean(x), np.median(x)
 
 
 def mkdirs(paths):
