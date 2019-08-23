@@ -1,5 +1,7 @@
 # Generative Adversarial Networks applied to multi-component seismic data
 
+[![Build Status](https://travis-ci.com/msc-acse/acse-9-independent-research-project-L519159123.svg?branch=master)](https://travis-ci.com/msc-acse/acse-9-independent-research-project-L519159123)
+
 We provide PyTorch implementations for paired seismic data domain translation problems.
 
 The code is an extension of source code written by Jun-Yan Zhu and Taesung Park, and supported by Tongzhou Wang, which is available via github repository https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix. 
