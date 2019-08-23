@@ -1,8 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
+"""
+author : Yuxuan Liu
+github alias: L519159123
+"""
 
 import os
 import numpy as np
