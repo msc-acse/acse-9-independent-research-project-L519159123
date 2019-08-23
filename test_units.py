@@ -1,8 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
+# Author: Yuxuan Liu
+# Github Alias: L519159123
 
-# In[1]:
-
+"""This module contains functions relating to the units testing of the software
+"""
 
 import sys
 
