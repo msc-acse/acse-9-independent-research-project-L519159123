@@ -26,43 +26,43 @@ cd acse-9-independent-research-project-L519159123
   - For Docker users, we provide the pre-built Docker image and Dockerfile. Please refer to our [Docker](docs/docker.md) page.
   
 ### CycleGAN train/test
-- Download a CycleGAN dataset (e.g. maps):
+- Download the dataset:
 ```bash
-bash ./datasets/download_cyclegan_dataset.sh maps
+sh download_data.sh
 ```
 - To view training results and loss plots, run `python -m visdom.server` and click the URL http://localhost:8097.
 - Train a model:
 ```bash
 #!./scripts/train_cyclegan.sh
-python train.py --dataroot ./datasets/maps --name maps_cyclegan --model cycle_gan
+python train.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_cyclegan --model cycle_gan
 ```
-To see more intermediate results, check out `./checkpoints/maps_cyclegan/web/index.html`.
+To see more intermediate results, check out `./checkpoints/seismic_cyclegan/web/index.html`.
 - Test the model:
 ```bash
 #!./scripts/test_cyclegan.sh
-python test.py --dataroot ./datasets/maps --name maps_cyclegan --model cycle_gan
+python test.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_cyclegan --model cycle_gan
 ```
-- The test results will be saved to a html file here: `./results/maps_cyclegan/latest_test/index.html`.
+- The test results will be saved to a html file here: `./results/seismic_cyclegan/latest_test/index.html`.
 
 ### pix2pix train/test
-- Download a pix2pix dataset (e.g.facades):
+- Download the dataset:
 ```bash
-bash ./datasets/download_pix2pix_dataset.sh facades
+sh download_data.sh
 ```
 - Train a model:
 ```bash
 #!./scripts/train_pix2pix.sh
-python train.py --dataroot ./datasets/facades --name facades_pix2pix --model pix2pix --direction BtoA
+python train.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_pix2pix --model pix2pix --direction AtoB
 ```
-- To view training results and loss plots, run `python -m visdom.server` and click the URL http://localhost:8097. To see more intermediate results, check out  `./checkpoints/facades_pix2pix/web/index.html`.
+- To view training results and loss plots, run `python -m visdom.server` and click the URL http://localhost:8097. To see more intermediate results, check out  `./checkpoints/seismic_pix2pix/web/index.html`.
 
 - Test the model (`bash ./scripts/test_pix2pix.sh`):
 ```bash
 #!./scripts/test_pix2pix.sh
-python test.py --dataroot ./datasets/facades --name facades_pix2pix --model pix2pix --direction BtoA
+python test.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_pix2pix --model pix2pix --direction AtoB
 ```
-- The test results will be saved to a html file here: `./results/facades_pix2pix/test_latest/index.html`. You can find more scripts at `scripts` directory.
-- To train and test pix2pix-based colorization models, please add `--model colorization` and `--dataset_mode colorization`. See our training [tips](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/tips.md#notes-on-colorization) for more details.
+- The test results will be saved to a html file here: `./results/seismic_pix2pix/test_latest/index.html`. You can find more scripts at `scripts` directory.
+- See our training [tips](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/tips.md) for more details.
 
 ### Apply a pre-trained model (CycleGAN)
 - You can download a pretrained model (e.g. horse2zebra) with the following script:
@@ -70,7 +70,7 @@ python test.py --dataroot ./datasets/facades --name facades_pix2pix --model pix2
 bash ./scripts/download_cyclegan_model.sh horse2zebra
 ```
 - The pretrained model is saved at `./checkpoints/{name}_pretrained/latest_net_G.pth`. Check [here](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/scripts/download_cyclegan_model.sh#L3) for all the available CycleGAN models.
-- To test the model, you also need to download the  horse2zebra dataset:
+- To test the model, you also need to download the horse2zebra dataset:
 ```bash
 bash ./datasets/download_cyclegan_dataset.sh horse2zebra
 ```
