@@ -69,9 +69,10 @@ We provide the pre-built Docker image and Dockerfile that can run this code repo
 
 ## [Datasets](docs/datasets.md)
 Download pix2pix/CycleGAN datasets and create your own datasets.
+
 **NOTE**
-The corresponding training checkpoints and test results will also be downloaded if you download the dataset via script ```bash
-sh download_data.sh```.
+
+The corresponding training checkpoints and test results will also be downloaded if you download the dataset via script `sh download_data.sh`.
 
 ## [Training/Test Tips](docs/tips.md)
 Best practice for training and testing your models.
