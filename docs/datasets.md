@@ -21,7 +21,7 @@ sh download_data.sh
 - `PZ_combination_in_lines_nocrop`: 1168 training gathers and 1168 test gathers. Each of seismic gather is 3800 x 240 pixels.
 - `PZ_combination_nocrop`: 1928 training gathers and 408 test gathers. Each of seismic gather is 3800 x 240 pixels.
 
-**NOTE**: Only the `PZ_combination_crop_900` dataset will be downloaded via `sh download_data.sh`. Other datasets can be provided onb request.
+**NOTE**: Only the `PZ_combination_crop_900` dataset will be downloaded via `sh download_data.sh`. Other datasets can be provided on request.
 
 We provide a python script to generate pix2pix training data in the form of pairs of images {A,B}, where A and B are two different depictions of the same underlying scene. For example, these might be pairs {P_data, Z_data}. Then we can learn to translate A to B or B to A:
 
