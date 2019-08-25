@@ -8,7 +8,7 @@ The software is an extension of source code written by Jun-Yan Zhu and Taesung P
 
 **Note**: The current software works well with PyTorch 0.41+.
 
-You may find useful information in [Training/Test Tips](docs/tips.md). To implement custom models and datasets, check out our [template](data/template_dataset.py). To help users better understand and adapt our codebase, we provide an [overview](docs/overview.md) of the code structure of this repository.
+You may find useful information in [Training/Test Tips](docs/tips.md). To implement custom models and datasets, check out our [template](Custom Model and Dataset). To help users better understand and adapt our codebase, we provide an [overview](docs/overview.md) of the code structure of this repository.
 
 ## Prerequisites
 - Linux or macOS
@@ -38,13 +38,13 @@ sh download_data.sh
 - Train a model:
 ```bash
 #!./scripts/train_cyclegan.sh
-python train.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_cyclegan --model cycle_gan --input_nc 1 --output_nc 1 --netG resnet_9blocks --dataset_mode aligned
+python train.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_cyclegan --model cycle_gan --input_nc 1 --output_nc 1 --dataset_mode aligned
 ```
 To see more intermediate results, check out `./checkpoints/seismic_cyclegan/web/index.html`.
 - Test the model:
 ```bash
 #!./scripts/test_cyclegan.sh
-python test.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_cyclegan --model cycle_gan --input_nc 1 --output_nc 1 --netG resnet_9blocks --dataset_mode aligned
+python test.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_cyclegan --model cycle_gan --input_nc 1 --output_nc 1 --dataset_mode aligned
 ```
 - The test results will be saved to a html file here: `./results/seismic_cyclegan/latest_test/index.html`.
 
@@ -56,14 +56,14 @@ sh download_data.sh
 - Train a model:
 ```bash
 #!./scripts/train_pix2pix.sh
-python train.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_pix2pix --model pix2pix --direction AtoB --input_nc 1 --output_nc 1 --netG resnet_9blocks
+python train.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_pix2pix --model pix2pix --direction AtoB --input_nc 1 --output_nc 1
 ```
 - To view training results and loss plots, run `python -m visdom.server` and click the URL http://localhost:8097. To see more intermediate results, check out  `./checkpoints/seismic_pix2pix/web/index.html`.
 
 - Test the model (`bash ./scripts/test_pix2pix.sh`):
 ```bash
 #!./scripts/test_pix2pix.sh
-python test.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_pix2pix --model pix2pix --direction AtoB --input_nc 1 --output_nc 1 --netG resnet_9blocks
+python test.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_pix2pix --model pix2pix --direction AtoB --input_nc 1 --output_nc 1
 ```
 - The test results will be saved to a html file here: `./results/seismic_pix2pix/test_latest/index.html`. You can find more scripts at `scripts` directory.
 - See our training [tips](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/tips.md) for more details.
