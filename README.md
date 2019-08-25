@@ -8,7 +8,7 @@ The software is an extension of source code written by Jun-Yan Zhu and Taesung P
 
 **Note**: The current software works well with PyTorch 0.41+.
 
-You may find useful information in [Training/Test Tips](docs/tips.md). To implement custom models and datasets, check out our [template](Custom Model and Dataset). To help users better understand and adapt our codebase, we provide an [overview](docs/overview.md) of the code structure of this repository.
+You may find useful information in [Training/Test Tips](docs/tips.md). To implement custom models and datasets, check out our [template](#custom-model-and-dataset). To help users better understand and adapt our codebase, we provide an [overview](docs/overview.md) of the code structure of this repository.
 
 ## Prerequisites
 - Linux or macOS
