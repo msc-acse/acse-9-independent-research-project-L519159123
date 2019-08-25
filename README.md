@@ -9,7 +9,7 @@ We provide PyTorch implementations for paired seismic data domain translation pr
 
 
 **pix2pix**
-<img src="https://github.com/msc-acse/acse-9-independent-research-project-L519159123/blob/master/imgs/pix2pix.png" width="700"/>
+<img src="https://github.com/msc-acse/acse-9-independent-research-project-L519159123/blob/master/imgs/pix2pix.png" width="800px"/>
 
 
 The software is an extension of source code written by Jun-Yan Zhu and Taesung Park which is available via github repository https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix. 
