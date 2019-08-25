@@ -4,7 +4,11 @@
 
 We provide PyTorch implementations for paired seismic data domain translation problems.
 
-The code is an extension of source code written by Jun-Yan Zhu and Taesung Park, and supported by Tongzhou Wang, which is available via github repository https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix. 
+The software is an extension of source code written by Jun-Yan Zhu and Taesung Park which is available via github repository https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix. 
+
+**Note**: The current software works well with PyTorch 0.41+.
+
+You may find useful information in [Training/Test Tips](docs/tips.md). To implement custom models and datasets, check out our [template](data/template_dataset.py). To help users better understand and adapt our codebase, we provide an [overview](docs/overview.md) of the code structure of this repository.
 
 ## Prerequisites
 - Linux or macOS
