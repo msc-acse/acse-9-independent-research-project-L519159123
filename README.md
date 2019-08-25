@@ -40,7 +40,7 @@ To see more intermediate results, check out `./checkpoints/seismic_cyclegan/web/
 - Test the model:
 ```bash
 #!./scripts/test_cyclegan.sh
-python test.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_cyclegan --model cycle_gan --input_nc 1 --output_nc 1 --netG resnet_9blocks
+python test.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_cyclegan --model cycle_gan --input_nc 1 --output_nc 1 --netG resnet_9blocks --dataset_mode aligned
 ```
 - The test results will be saved to a html file here: `./results/seismic_cyclegan/latest_test/index.html`.
 
