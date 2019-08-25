@@ -85,6 +85,9 @@ If you plan to implement custom models and dataset for your new applications, we
 ## [Code structure](docs/overview.md)
 To help users better understand and use our code, we briefly overview the functionality and implementation of each package and each module.
 
+## [Author and Course Information]
+**Author**: Yuxuan Liu **Github**: L519159123 **CID**: 01550892
+
 ## Acknowledgments
 - Our code is inherited from [pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 - Thanks to the support from my supervisor Prof. Mike Warner and Dr. Jiashun Yao.
