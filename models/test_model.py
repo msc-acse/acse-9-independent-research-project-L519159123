@@ -1,3 +1,8 @@
+"""
+author : Yuxuan Liu
+github alias: L519159123
+"""
+
 from .base_model import BaseModel
 from . import networks
 

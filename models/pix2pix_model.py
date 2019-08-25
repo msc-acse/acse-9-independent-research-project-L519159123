@@ -1,3 +1,8 @@
+"""
+author : Yuxuan Liu
+github alias: L519159123
+"""
+
 import torch
 import numpy as np
 from .base_model import BaseModel

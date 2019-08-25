@@ -1,5 +1,7 @@
-# Author: Yuxuan Liu
-# Github Alias: L519159123
+"""
+author : Yuxuan Liu
+github alias: L519159123
+"""
 
 """This module contains functions relating to the units testing of the software
 """

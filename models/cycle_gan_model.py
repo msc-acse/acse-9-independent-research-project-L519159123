@@ -1,3 +1,8 @@
+"""
+author : Yuxuan Liu
+github alias: L519159123
+"""
+
 import torch
 import itertools
 import numpy as np

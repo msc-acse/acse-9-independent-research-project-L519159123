@@ -1,3 +1,8 @@
+"""
+author : Yuxuan Liu
+github alias: L519159123
+"""
+
 import os.path
 import torch
 import numpy as np
@@ -5,17 +10,6 @@ from data.base_dataset import BaseDataset, get_params, get_transform
 from data.image_folder import make_dataset
 from PIL import Image
 import random
-
-def randomCrop(data1, data2, width, height):
-    assert width <= data1.shape[0]
-    assert height <= data1.shape[1]
-    crop_w = random.randint(0,data1.shape[0] - width)
-
-    crop_h = random.randint(0,data1.shape[1] - height)
-
-    data1 = data1[crop_w:crop_w+width, crop_h:crop_h+height]
-    data2 = data2[crop_w:crop_w+width, crop_h:crop_h+height]
-    return data1, data2
 
 class AlignedDataset(BaseDataset):
     """A dataset class for paired image dataset.

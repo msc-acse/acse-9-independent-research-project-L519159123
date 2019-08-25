@@ -1,3 +1,8 @@
+"""
+author : Yuxuan Liu
+github alias: L519159123
+"""
+
 from .pix2pix_model import Pix2PixModel
 import torch
 from skimage import color  # used for lab2rgb

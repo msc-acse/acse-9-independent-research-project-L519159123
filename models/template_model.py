@@ -1,3 +1,8 @@
+"""
+author : Yuxuan Liu
+github alias: L519159123
+"""
+
 """Model class template
 
 This module provides a template for users to implement custom models.

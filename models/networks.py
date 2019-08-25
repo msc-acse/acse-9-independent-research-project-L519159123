@@ -1,3 +1,8 @@
+"""
+author : Yuxuan Liu
+github alias: L519159123
+"""
+
 import torch
 import torch.nn as nn
 from torch.nn import init
