@@ -96,4 +96,4 @@ This project is completed for Imperial College's MSc in Applied Computational Sc
 - Thanks to the moral support from my family and friends.
 
 ## License
-This project is licensed under the MIT [license](LICENSE.md).
+This project is licensed under the MIT [license](LICENSE).
