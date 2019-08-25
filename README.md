@@ -37,24 +37,6 @@ cd acse-9-independent-research-project-L519159123
   - For Conda users, we provide a installation script `./scripts/conda_deps.sh`. Alternatively, you can create a new Conda environment using `conda env create -f environment.yml`.
   - For Docker users, we provide the pre-built Docker image and Dockerfile. Please refer to our [Docker](docs/docker.md) page.
   
-### CycleGAN train/test
-- Download the dataset:
-```bash
-sh download_data.sh
-```
-- To view training results and loss plots, run `python -m visdom.server` and click the URL http://localhost:8097.
-- Train a model:
-```bash
-#!./scripts/train_cyclegan.sh
-python train.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_cyclegan --model cycle_gan --input_nc 1 --output_nc 1 --dataset_mode aligned
-```
-To see more intermediate results, check out `./checkpoints/seismic_cyclegan/web/index.html`.
-- Test the model:
-```bash
-#!./scripts/test_cyclegan.sh
-python test.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_cyclegan --model cycle_gan --input_nc 1 --output_nc 1 --dataset_mode aligned
-```
-- The test results will be saved to a html file here: `./results/seismic_cyclegan/latest_test/index.html`.
 
 ### pix2pix train/test
 - Download the dataset:
@@ -75,6 +57,26 @@ python test.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seis
 ```
 - The test results will be saved to a html file here: `./results/seismic_pix2pix/test_latest/index.html`. You can find more scripts at `scripts` directory.
 - See our training [tips](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/tips.md) for more details.
+
+### CycleGAN train/test
+- Download the dataset:
+```bash
+sh download_data.sh
+```
+- To view training results and loss plots, run `python -m visdom.server` and click the URL http://localhost:8097.
+- Train a model:
+```bash
+#!./scripts/train_cyclegan.sh
+python train.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_cyclegan --model cycle_gan --input_nc 1 --output_nc 1 --dataset_mode aligned
+```
+To see more intermediate results, check out `./checkpoints/seismic_cyclegan/web/index.html`.
+- Test the model:
+```bash
+#!./scripts/test_cyclegan.sh
+python test.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_cyclegan --model cycle_gan --input_nc 1 --output_nc 1 --dataset_mode aligned
+```
+- The test results will be saved to a html file here: `./results/seismic_cyclegan/latest_test/index.html`.
+
 
 ## [Docker](docs/docker.md)
 We provide the pre-built Docker image and Dockerfile that can run this code repo. See [docker](docs/docker.md).
