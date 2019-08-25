@@ -8,7 +8,8 @@ We provide PyTorch implementations for paired seismic data domain translation pr
 <img src="https://github.com/msc-acse/acse-9-independent-research-project-L519159123/blob/master/imgs/cycle.png" width="800"/>
 
 
-**pix2pix**
+**Pix2pix**
+
 <img src="https://github.com/msc-acse/acse-9-independent-research-project-L519159123/blob/master/imgs/pix2pix.png" width="800px"/>
 
 
