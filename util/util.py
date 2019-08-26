@@ -1,8 +1,5 @@
-"""
-author : Yuxuan Liu
-github alias: L519159123
-"""
-
+# Author: Yuxuan Liu
+# Github Alias: L519159123
 """This module contains simple helper functions """
 from __future__ import print_function
 import torch
