@@ -6,10 +6,5 @@ python:
 install:
   - pip install -r requirements.txt
 
-# Specify branches to build
-branches:
-  only:
-    - test
-
 # command to run tests
 script: pytest test_units.py
