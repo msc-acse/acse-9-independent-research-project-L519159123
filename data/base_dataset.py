@@ -140,10 +140,32 @@ def __scale_width(img, target_width, method=Image.BICUBIC):
     return img.reshape((w, h), method)
 
 
+def scale_width(img, target_width, method=Image.BICUBIC):
+    #ow, oh = img.size
+    ow, oh = img.shape
+    if (ow == target_width):
+        return img
+    w = target_width
+    h = int(target_width * oh / ow)
+    #return img.resize((w, h), method)
+    return img.reshape((w, h), method)
+
+
 def __crop(img, pos, size):
     #ow, oh = img.size
     ow, oh = img.shape
     x1, y1 = pos
+    tw = th = size
+    if (ow > tw or oh > th):
+        #return img.crop((x1, y1, x1 + tw, y1 + th))
+        return img[x1: x1 + tw, y1: y1 + th]
+    return img
+
+
+def crop(img, pos, size):
+    #ow, oh = img.size
+    ow, oh = img.shape
+    x1 = y1 = pos
     tw = th = size
     if (ow > tw or oh > th):
         #return img.crop((x1, y1, x1 + tw, y1 + th))

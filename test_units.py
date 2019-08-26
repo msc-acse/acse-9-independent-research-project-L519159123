@@ -11,6 +11,8 @@ import sys
 sys.path.append(".")
 
 from util.util import *
+from data.base_dataset import *
+from data.image_folder import *
 import pytest
 import numpy as np
 
@@ -35,3 +37,29 @@ def test_invalid_tensor2im():
     x = np.random.rand(32, 32)
     y = tensor2im(x)
     assert not y.shape == (3, 32, 32)
+
+def test_valid_crop():
+    x = np.random.rand(32, 32)
+    y = crop(x, 5, 5)
+    assert y.shape == (5, 5)
+
+def test_invalid_crop():
+    x = np.random.rand(32, 32)
+    y = crop(x, 35, 35)
+    assert not y.shape == (35, 35)
+
+def test_valid_scale_width():
+    x = np.random.rand(32, 32)
+    y = scale_width(x, 32)
+    assert y.shape == (32, 32)
+
+def test_valid_data_file():
+    x = 'datafile.txt'
+    y = is_data_file(x)
+    assert y == 1
+
+def test_invalid_data_file():
+    x = 'datafile.png'
+    y = is_data_file(x)
+    assert y == 0
+
