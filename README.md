@@ -98,7 +98,7 @@ To help users better understand and use our code, we briefly overview the functi
 ## Author and Course Information
 **Author**: Yuxuan Liu **Github**: L519159123 **CID**: 01550892
 
-This project is completed for Imperial College's MSc in Applied Computational Science and Engineering program, as part of the final course module ACSE9. This project was completed under the supervision of Prof. Mike Warner and Dr.Jiashun Yao.
+This project is completed for Imperial College's MSc in Applied Computational Science and Engineering program, as part of the final course module ACSE9. This project was completed under the supervision of Prof. Mike Warner and Dr. Jiashun Yao.
 
 ## Acknowledgments
 - Our code is inherited from [pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
