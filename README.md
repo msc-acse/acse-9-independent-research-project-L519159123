@@ -55,7 +55,7 @@ python train.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name sei
 python test.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seismic_pix2pix --model pix2pix --direction AtoB --input_nc 1 --output_nc 1 --netG resnet_9blocks
 ```
 - The test results will be saved to a html file here: `./results/seismic_pix2pix/test_latest/index.html`. You can find more scripts at `scripts` directory.
-- See our training [tips](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/tips.md) for more details.
+- See our training [tips](docs/tips.md) for more details.
 
 ### CycleGAN train/test
 - Download the dataset:
