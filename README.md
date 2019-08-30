@@ -35,7 +35,6 @@ cd acse-9-independent-research-project-L519159123
 - Install [PyTorch](http://pytorch.org and) 0.4+ and other dependencies (e.g., torchvision, [visdom](https://github.com/facebookresearch/visdom) and [dominate](https://github.com/Knio/dominate)).
   - For pip users, please type the command `pip install -r requirements.txt`.
   - For Conda users, we provide a installation script `./scripts/conda_deps.sh`. Alternatively, you can create a new Conda environment using `conda env create -f environment.yml`.
-  - For Docker users, we provide the pre-built Docker image and Dockerfile. Please refer to our [Docker](docs/docker.md) page.
   
 
 ### pix2pix train/test
@@ -77,9 +76,6 @@ python test.py --dataroot ./datasets/seismic/PZ_combination_crop_900 --name seis
 ```
 - The test results will be saved to a html file here: `./results/seismic_cyclegan/latest_test/index.html`.
 
-
-## [Docker](docs/docker.md)
-We provide the pre-built Docker image and Dockerfile that can run this code repo. See [docker](docs/docker.md).
 
 ## [Datasets](docs/datasets.md)
 Download pix2pix/CycleGAN datasets and create your own datasets.
